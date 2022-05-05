@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?places');
+  }
+  
+
+  .card {
+    background: #ffffffd0;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+  
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #1308082b;
+    color: rgb(17, 15, 15);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  
+  button:hover {
+    background: #3f3d3d6b;
+  }
+  
+input.search-bar{
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  background: #2e2c2c2b;
+  color: rgb(12, 12, 12);
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+.description {
+  text-transform: capitalize;
+
+}
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    color: rgb(102, 23, 23);
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  #weatherContainer{
+    position: absolute;
+    top: 84%;
+    left: 53%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 1300px;
+}
+
+
+.icons{
+    display: inline-bock;
+    float: left;
+    height: 200px;
+    width: 190px;
+    margin: 20px;
+    border: 5px solid rgb(14, 13, 13);
+    border-radius: 10px;
+}
+
+.image{
+    height: 120px;
+    width: 100%;
+}
+
+.imgClass{
+    height: 140px;
+    width: 100%;
+}
+
+.weather{
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.minValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: aliceblue;
+}
+
+
+.maxValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: aliceblue;
+}
